@@ -24,8 +24,8 @@ public class Nopilha {
         return refNo;
     }
 
-    public void setRefNo(Nopilha reNo) {
-        this.refNo = reNo;
+    public void setRefNo(Nopilha refNo) {
+        this.refNo = refNo;
     }
 
     @Override
