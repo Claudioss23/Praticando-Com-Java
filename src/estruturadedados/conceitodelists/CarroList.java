@@ -1,12 +1,12 @@
-package estruturadedados.conceitodeequalsehashcode;
+package estruturadedados.conceitodelists;
 
 import java.util.Objects;
 
-public class Carro {
+public class CarroList {
 
     String marca;
 
-    public Carro(String marca) {
+    public CarroList(String marca) {
         this.marca = marca;
     }
 
@@ -22,12 +22,19 @@ public class Carro {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Carro carro = (Carro) o;
-        return Objects.equals(marca, carro.marca);
+        CarroList carroEeH = (CarroList) o;
+        return Objects.equals(marca, carroEeH.marca);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(marca);
+    }
+
+    @Override
+    public String toString() {
+        return "Carro{" +
+                "marca='" + marca + '\'' +
+                '}';
     }
 }
